@@ -12,4 +12,5 @@ using namespace std;
 
 int main(){
     cout<<"I'm HAYOUNG KIM!!!"<<endl;
+	cout << "I'm HJ Lee!!" << endl;
 }
