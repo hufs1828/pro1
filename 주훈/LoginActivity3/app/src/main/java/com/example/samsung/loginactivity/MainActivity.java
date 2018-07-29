@@ -21,6 +21,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+import com.google.android.gms.maps.GoogleMap;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements
     private static final String TAG = "MainActivity";
     private static final int RC_SIGN_IN = 9001;
     private static final int REQUEST_CODE_MENU = 9002;
+    private static final int FIND_MAP = 9003;
+
     private GoogleApiClient mGoogleApiClient;
     private TextView mStatusTextView;
     private TextView testview;
@@ -112,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         if(requestCode == REQUEST_CODE_MENU) {
-            Toast.makeText(getApplicationContext(), "호ㅜㄹ된코드"+requestCode+ resultCode, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "로그인 되었습니다."+requestCode+ resultCode, Toast.LENGTH_LONG).show();
 
             if (requestCode == RESULT_OK) {
                 String name = data.getExtras().getString("name");
