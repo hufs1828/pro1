@@ -38,8 +38,13 @@
             android:onClick="mOnClick"/>
 
 
+<<<<<<< HEAD
         <Button
             android:id="@+id/btn_next"
+=======
+
+        <Button android:id="@+id/btn_next"
+>>>>>>> 432d4a294d55982f0b265daeb428e4a9761d6f4f
 
             android:layout_width="0dp"
 
@@ -47,6 +52,7 @@
 
             android:layout_weight="1"
 
+<<<<<<< HEAD
             android:onClick="mOnClick"
 
             android:text="Next"
@@ -66,6 +72,17 @@
             android:onClick="courseClick"
 
             />
+=======
+            android:text="Next"
+
+            android:textSize="12sp"
+
+            android:onClick="mOnClick"/>
+
+
+
+    </LinearLayout>
+>>>>>>> 432d4a294d55982f0b265daeb428e4a9761d6f4f
 
 
 
