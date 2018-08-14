@@ -1,0 +1,155 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/59597911cf44a5b0ecebe401e1b0e6a0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/cbb10547040ea4fc98776a2bff698720/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha3.aar/8cba416e92bc71dca917092242c19247/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha3.aar/1121de37a14f44cb88073c4572532493/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha3.aar/79cf5995528501f28f38e3d0a4e6717a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha3.aar/54d91296e8752eafcb477e023582685e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha3.aar/514d189cf72af03dc491032ab556487b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha3.aar/fbbf8566b2878f99155a9c36deb9dad5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha3.aar/dccbc265a9554823c7c2d8667fe3fca2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha3.aar/accbf29c5d3e609d73ffeb80f5ed59e2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha3.aar/896602a5ebd21d54f8c0a03efc81fd5d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha3.aar/c6aa423e7ecf80ff049c55cbcd0b11a3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha3.aar/e84c158946435ecc803eb059fccdbbef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha3.aar/7848ff70ce85dd128890409c455a6b60/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha3.aar/c0ba83dcb2be100935c1406e7f0349e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/b249b05178d2ba4b22ccf10d11f0b05d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha3.aar/900c8ce548d7ccfd196753d54ea3b463/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1e615efd2923deb0cf054e0015859529/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/bf15ae3a42a1748c33d2e22fda8819a2/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha3.aar/dbdeaf4c3832c8b825dadf526c865aa2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha3.aar/7123cd7d781f6bf8dd9ebe21021ae972/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha3.aar/8821d49981f7f3b03afd52b6423a2165/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/75578025640061454ebb143c184b3323/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1f7ac4bbe8413d5a631f299118fa4c94/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/64c0b22e3024320dc75230c4368c3d4a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha3.aar/a6ea0dbfd2b3b4b4644ba37c140827c5/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/cbb10547040ea4fc98776a2bff698720/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/cbb10547040ea4fc98776a2bff698720/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/b249b05178d2ba4b22ccf10d11f0b05d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/b249b05178d2ba4b22ccf10d11f0b05d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/bf15ae3a42a1748c33d2e22fda8819a2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/bf15ae3a42a1748c33d2e22fda8819a2/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/b249b05178d2ba4b22ccf10d11f0b05d/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.mooneopkim.hint_activity.HintActivity
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:12:9-19:20
+	android:name
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.example.mooneopkim.hint_activity.MissionActivity
+ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:21:9-62
+	android:name
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml:21:19-50
+uses-sdk
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/59597911cf44a5b0ecebe401e1b0e6a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/59597911cf44a5b0ecebe401e1b0e6a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/cbb10547040ea4fc98776a2bff698720/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/cbb10547040ea4fc98776a2bff698720/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha3.aar/8cba416e92bc71dca917092242c19247/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha3.aar/8cba416e92bc71dca917092242c19247/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha3.aar/1121de37a14f44cb88073c4572532493/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha3.aar/1121de37a14f44cb88073c4572532493/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha3.aar/79cf5995528501f28f38e3d0a4e6717a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha3.aar/79cf5995528501f28f38e3d0a4e6717a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha3.aar/54d91296e8752eafcb477e023582685e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha3.aar/54d91296e8752eafcb477e023582685e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha3.aar/514d189cf72af03dc491032ab556487b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha3.aar/514d189cf72af03dc491032ab556487b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha3.aar/fbbf8566b2878f99155a9c36deb9dad5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha3.aar/fbbf8566b2878f99155a9c36deb9dad5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha3.aar/dccbc265a9554823c7c2d8667fe3fca2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha3.aar/dccbc265a9554823c7c2d8667fe3fca2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha3.aar/accbf29c5d3e609d73ffeb80f5ed59e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha3.aar/accbf29c5d3e609d73ffeb80f5ed59e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha3.aar/896602a5ebd21d54f8c0a03efc81fd5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha3.aar/896602a5ebd21d54f8c0a03efc81fd5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha3.aar/c6aa423e7ecf80ff049c55cbcd0b11a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha3.aar/c6aa423e7ecf80ff049c55cbcd0b11a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha3.aar/e84c158946435ecc803eb059fccdbbef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha3.aar/e84c158946435ecc803eb059fccdbbef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha3.aar/7848ff70ce85dd128890409c455a6b60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha3.aar/7848ff70ce85dd128890409c455a6b60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha3.aar/c0ba83dcb2be100935c1406e7f0349e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha3.aar/c0ba83dcb2be100935c1406e7f0349e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/b249b05178d2ba4b22ccf10d11f0b05d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/b249b05178d2ba4b22ccf10d11f0b05d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha3.aar/900c8ce548d7ccfd196753d54ea3b463/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha3.aar/900c8ce548d7ccfd196753d54ea3b463/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1e615efd2923deb0cf054e0015859529/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1e615efd2923deb0cf054e0015859529/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/bf15ae3a42a1748c33d2e22fda8819a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/bf15ae3a42a1748c33d2e22fda8819a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha3.aar/dbdeaf4c3832c8b825dadf526c865aa2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha3.aar/dbdeaf4c3832c8b825dadf526c865aa2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha3.aar/7123cd7d781f6bf8dd9ebe21021ae972/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha3.aar/7123cd7d781f6bf8dd9ebe21021ae972/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha3.aar/8821d49981f7f3b03afd52b6423a2165/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha3.aar/8821d49981f7f3b03afd52b6423a2165/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/75578025640061454ebb143c184b3323/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/75578025640061454ebb143c184b3323/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1f7ac4bbe8413d5a631f299118fa4c94/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1f7ac4bbe8413d5a631f299118fa4c94/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/64c0b22e3024320dc75230c4368c3d4a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/64c0b22e3024320dc75230c4368c3d4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha3.aar/a6ea0dbfd2b3b4b4644ba37c140827c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] /Users/mooneopkim/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha3.aar/a6ea0dbfd2b3b4b4644ba37c140827c5/AndroidManifest.xml:20:5-44
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mooneopkim/Downloads/Hint_Activity/app/src/main/AndroidManifest.xml
