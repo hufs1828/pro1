@@ -16,7 +16,7 @@ public class MissionActivity extends AppCompatActivity {
 
     public void testButtonClicked(View v) {
         String msg = "미션완료!";
-        Intent my_intent = new Intent(getApplicationContext(),HintActivity.class);
+        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
         Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
         startActivity(my_intent);
     }

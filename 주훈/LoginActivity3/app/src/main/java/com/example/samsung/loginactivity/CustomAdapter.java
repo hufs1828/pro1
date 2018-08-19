@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-
 public class CustomAdapter extends PagerAdapter {
     LayoutInflater inflater;
     public CustomAdapter(LayoutInflater inflater) {
@@ -25,7 +24,6 @@ public class CustomAdapter extends PagerAdapter {
     //쉽게 말해, 스크롤을 통해 현재 보여져야 하는 View를 만들어냄.
     //첫번째 파라미터 : ViewPager
     //두번째 파라미터 : ViewPager가 보여줄 View의 위치(가장 처음부터 0,1,2,3...)
-
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         // TODO Auto-generated method stub
@@ -38,41 +36,22 @@ public class CustomAdapter extends PagerAdapter {
         ImageView img= (ImageView)view.findViewById(R.id.img_viewpager_childimage);
         //ImageView에 현재 position 번째에 해당하는 이미지를 보여주기 위한 작업
         //현재 position에 해당하는 이미지를 setting
-        // img.setImageResource(R.drawable.gametitle_01+position);
-        //img.setImageResource(R.drawable.image_+position);
-        img.setImageResource(R.drawable.image_1+position);
+        img.setImageResource(R.drawable.button0+position);
         //ViewPager에 만들어 낸 View 추가
         container.addView(view);
         //Image가 세팅된 View를 리턴
         return view;
     }
-
-
-
     //화면에 보이지 않은 View는파쾨를 해서 메모리를 관리함.
-
     //첫번째 파라미터 : ViewPager
-
     //두번째 파라미터 : 파괴될 View의 인덱스(가장 처음부터 0,1,2,3...)
-
     //세번째 파라미터 : 파괴될 객체(더 이상 보이지 않은 View 객체)
-
     @Override
-
     public void destroyItem(ViewGroup container, int position, Object object) {
-
         // TODO Auto-generated method stub
-
-
-
         //ViewPager에서 보이지 않는 View는 제거
-
         //세번째 파라미터가 View 객체 이지만 데이터 타입이 Object여서 형변환 실시
-
         container.removeView((View)object);
-
-
-
     }
 
 
@@ -88,6 +67,5 @@ public class CustomAdapter extends PagerAdapter {
         return v==obj;
 
     }
-
 
 }

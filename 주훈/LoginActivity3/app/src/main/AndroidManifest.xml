@@ -33,7 +33,7 @@
             android:label="미션 페이지"
             android:theme="@style/AppTheme"></activity>
         <activity
-            android:name=".HintActivity"
+            android:name=".Hint_Activity"
             android:label="힌트 페이지"
             android:theme="@style/AppTheme"></activity>
         <activity
