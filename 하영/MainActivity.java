@@ -1,141 +1,69 @@
-package com.example.kimhayoung.mydatabase;
-import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.widget.Button;
-import android.view.*;
-import android.widget.LinearLayout;
-import android.widget.EditText;
-import com.example.kimhayoung.db.DBHelper;
-import com.example.kimhayoung.db.Person;
+package com.example.user.db_sample;
 
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnCreateDatabase;
-    private Button btnInsertDatabase;
-    private Button btnSelectAllData;
-    private ListView lvPeople;
-    private DBHelper dbHelper;
+    DB_OPEN db_open;
+    SQLiteDatabase db;
 
-
+    /**Called when the activity is first created. */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public  void onCreate(Bundle savedInstanceState){
+           super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+     ArrayList<String> arr = new ArrayList<>();
 
-        btnCreateDatabase = (Button) findViewById(R.id.btnCreateButton);
-        btnCreateDatabase.setOnClickListener(new View.OnClickListener() {
+        db_open = new DB_OPEN(this);
+        db= db_open.getWritableDatabase();
 
+        Cursor c = db.rawQuery("SELECT contents from step",null);
+        c.moveToFirst();
+        c.getCount();
 
-            @Override
-            public void onClick(View v) {
-                final EditText etDBName = new EditText(MainActivity.this);
-                etDBName.setHint("DB명을 입력하세요.");
+        //row수만큼 반복.
+        for(int i=0; i<1; i++){
+            arr.add(c.getString(0));
+            c.moveToNext();
+        }
+        ListView list = findViewById(R.id.listview_user);
+        final ArrayAdapter<String> aaa = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,arr);
+        list.setAdapter(aaa);
 
-                // Dialog로 Database의 이름을 입력받는다.
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                dialog.setTitle("Database 이름을 입력하세요.")
-                        .setMessage("Database 이름을 입력하세요.")
-                        .setView(etDBName)
-                        .setPositiveButton("생성", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                if( etDBName.getText().toString().length() > 0 ) {
-                                    dbHelper = new DBHelper( MainActivity.this, etDBName.getText().toString(), null, 1);
-                                }
-                                dbHelper.testDB();
-                            }
-                        })
-                        .setNeutralButton("취소", new DialogInterface.OnClickListener(){
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) { }})
-                        .create()
-                        .show();
-            }
-    });
-
-
-        btnInsertDatabase = (Button) findViewById(R.id.btnInsertButton);
-        btnInsertDatabase.setOnClickListener(new View.OnClickListener() {
-
-           @Override
-
-            public void onClick(View v) {
-                LinearLayout layout = new LinearLayout(MainActivity.this);
-                layout.setOrientation(LinearLayout.VERTICAL);
-
-                final EditText etName = new EditText(MainActivity.this);
-                etName.setHint("이름을 입력하세요.");
-
-                final EditText etAge = new EditText(MainActivity.this);
-                etAge.setHint("나이를 입력하세요.");
-
-                final EditText etPhone = new EditText(MainActivity.this);
-                etPhone.setHint("전화번호를 입력하세요.");
-
-                layout.addView(etName);
-                layout.addView(etAge);
-                layout.addView(etPhone);
-
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-
-                dialog.setTitle("정보를 입력하세요")
-                        .setView(layout)
-                        .setPositiveButton("등록", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                String name = etName.getText().toString();
-                                String age = etAge.getText().toString();
-                                String phone = etPhone.getText().toString();
-                                if (dbHelper == null) {
-                                    dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
-                                }
-
-                                Person person = new Person();
-                                person.setName(name);
-                                person.setAge(age);
-                                person.setPhone(phone);
-                                dbHelper.addPerson(person);
-                            }
-                        })
-                        .setNeutralButton("취소", new DialogInterface.OnClickListener() {
-                            @Override
-
-                            public void onClick(DialogInterface dialog, int which) {
-                            }
-                        })
-                        .create()
-                        .show();
-            } });
-
-
-        lvPeople = (ListView) findViewById(R.id.lvPeople);
-        btnSelectAllData = (Button) findViewById(R.id.btnSelectAllData);
-        btnSelectAllData.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-
-                //ListView를 보여준다.
-                lvPeople.setVisibility(View.VISIBLE);
-
-                //DB Helper가 NUll 이면 초기화 시킴
-                if(dbHelper == null){
-                    dbHelper = new DBHelper(MainActivity.this,"TEST",null,1);
-                }
-
-                //1. Person데이터를 모두 가져옴.
-                List people
-                        =dbHelper.getAllPersonData();
-
-                //2. ListView에 Person 데이터를 모두 보여줌.
-                lvPeople.setAdapter(new PersonListAdapter(people,MainActivity.this));
-            }
-        });
     }
+    public void onclick(View view){
+      /*  Intent intent =new Intent(this,HintActivity.class);
+        startActivity(intent);
+        finish();*/
+    }
+    public void onclick_get_Hint(View view){
+        ArrayList<String> arr = new ArrayList<>();
 
+        db_open = new DB_OPEN(this);
+        db= db_open.getWritableDatabase();
+
+        Cursor c = db.rawQuery("SELECT contents from step",null);
+        c.moveToFirst();
+        c.getCount();
+
+        //row수만큼 반복.
+        for(int i=0; i< c.getCount(); i++){
+            arr.add(c.getString(0));
+            c.moveToNext();
+        }
+        ListView list = findViewById(R.id.listview_user);
+        final ArrayAdapter<String> aaa = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,arr);
+        list.setAdapter(aaa);
+
+    }
 }
+

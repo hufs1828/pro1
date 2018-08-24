@@ -1,16 +1,14 @@
-package com.example.kimhayoung.untitled;
+package com.example.user.db_sample;
 
+import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 public class DB_OPEN extends SQLiteOpenHelper {
-
     public DB_OPEN(Context context){
         //TODO Auto-generated constructor stub
         super(context,"db_user",null,1);
     }
-
     @Override
     public void onCreate(SQLiteDatabase db) {
         //TODO Auto-gernerated method stub
