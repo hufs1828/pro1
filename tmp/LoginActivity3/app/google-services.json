@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "73009856940",
+    "firebase_url": "https://spry-tesla-205712.firebaseio.com",
+    "project_id": "spry-tesla-205712",
+    "storage_bucket": "spry-tesla-205712.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73009856940:android:cfa8fa952bb2caeb",
+        "android_client_info": {
+          "package_name": "com.example.samsung.loginactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73009856940-196thald5svtbc9kaf7r70bff3oei3na.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samsung.loginactivity",
+            "certificate_hash": "735c2b894bc60d582ce08365696205d01a081278"
+          }
+        },
+        {
+          "client_id": "73009856940-utjnckhumvngojb0tuo76gku4bvdfeop.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "73009856940-utjnckhumvngojb0tuo76gku4bvdfeop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoIkWP-RWdPVh2nBEBuM8YGhdZO8OfEw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73009856940-utjnckhumvngojb0tuo76gku4bvdfeop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
