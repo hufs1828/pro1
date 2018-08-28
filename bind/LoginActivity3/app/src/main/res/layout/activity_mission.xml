@@ -90,7 +90,7 @@
         tools:layout_editor_absoluteX="323dp"
         tools:layout_editor_absoluteY="129dp" />
 
-    <TextView
+    <ListView
         android:id="@+id/textView"
         android:layout_width="209dp"
         android:layout_height="83dp"
