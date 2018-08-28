@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samsung.loginactivity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="hanium_app"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDPJFkh57VCRhjAwcXi0l2m0ZUxDvr4jGo"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SampleIntent"
+            android:label="샘플 액티비티"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".MissionActivity"
+            android:label="미션 페이지"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".MissionActivity2"
+            android:label="미션 페이지2"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".MissionActivity3"
+            android:label="미션 페이지3"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Hint_Activity"
+            android:label="힌트 페이지"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".CourseSelect"
+            android:label="코스 선택"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
