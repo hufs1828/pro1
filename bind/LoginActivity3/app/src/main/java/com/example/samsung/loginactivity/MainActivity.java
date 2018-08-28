@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements
     private static final int REQUEST_CODE_MENU = 9002;
 
     private GoogleApiClient mGoogleApiClient;
-    private TextView mStatusTextView;
+  //  private TextView mStatusTextView;
     private TextView testview;
     private ProgressDialog mProgressDialog;
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
 
         // Views
-        mStatusTextView = (TextView) findViewById(R.id.status);
+       // mStatusTextView = (TextView) findViewById(R.id.status);
         // Button listeners
         findViewById(R.id.sign_in_button).setOnClickListener(this);
         findViewById(R.id.sign_out_button).setOnClickListener(this);
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements
             myId = acct.getEmail(); //myId값에 ID전달
             ConnectThread thread = new ConnectThread();
             thread.start();
-            mStatusTextView.setText(acct.getDisplayName());
+           // mStatusTextView.setText(acct.getDisplayName());
             updateUI(true);
             nextPage();
         } else {
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {
-             mStatusTextView.setText(R.string.signed_out);
+         //    mStatusTextView.setText(R.string.signed_out);
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
         }
@@ -259,15 +259,6 @@ public class MainActivity extends AppCompatActivity implements
 //                //--------------------------
                 StringBuffer buffer = new StringBuffer();
                 buffer.append("id").append("=").append(myId);
-//                System.out.println("DEDUB -------- SENDING ");
-//                System.out.println(buffer);
-//
-//                OutputStream os = http.getOutputStream();
-//                BufferedWriter buf = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-//                buf.write(buffer.toString());
-//                buf.flush();
-//                os.close();
-//                System.out.println("DEDUB -------- SENDING ");
                 OutputStreamWriter outStream = new OutputStreamWriter(http.getOutputStream(), "EUC-KR");
                 System.out.println("ID"+myId);
                 PrintWriter writer = new PrintWriter(outStream);
@@ -276,17 +267,6 @@ public class MainActivity extends AppCompatActivity implements
                // --------------------------
                    //서버에서 전송받기
                 //--------------------------
-//                InputStreamReader tmp = new InputStreamReader(http.getInputStream(), "EUC-KR");
-//                BufferedReader reader = new BufferedReader(tmp);
-//                StringBuilder builder = new StringBuilder();
-//                String str;
-//                while ((str = reader.readLine()) != null) {// 서버에서 라인단위로 보내줄 것이므로 라인단위로 읽는다
-//                    builder.append(str + "\n");// View에 표시하기 위해 라인 구분자 추가
-//            }
-//                myResult = builder.toString();// 전송결과를 전역 변수에 저장
-//                ((TextView) (findViewById(R.id.text_result))).setText(myResult);
-//                System.out.println(myResult);
-//                mStatusTextView.setText(myResult); 전송받는코드 필요 x
             } catch (MalformedURLException e) {
                 //
             } catch (IOException e) {

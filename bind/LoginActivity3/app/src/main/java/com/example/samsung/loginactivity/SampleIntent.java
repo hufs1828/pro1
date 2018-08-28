@@ -38,7 +38,6 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.button_continue:
                 Intent intent = new Intent();
-                //intent.putExtra("name","mike");
                 Toast.makeText(getApplicationContext(),"이어하기",Toast.LENGTH_LONG).show();
                 break;
             case R.id.button_new:

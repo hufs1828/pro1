@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MissionActivity"
+    tools:context=".MissionActivity3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D0E4F5"
@@ -15,7 +15,7 @@
 
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
-        android:text="MISSION1"
+        android:text="MISSION3"
         android:textColor="#FF0000"
         android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,12 +27,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_width="101dp"
+        android:layout_height="124dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
         app:srcCompat="@drawable/run"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="54dp" />
@@ -41,29 +40,30 @@
         android:id="@+id/imageView2"
         android:layout_width="44dp"
         android:layout_height="59dp"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_below="@+id/imageView"
-        app:srcCompat="@drawable/arrow"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="114dp"
+        app:srcCompat="@drawable/arrow2"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="123dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="46dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_marginStart="27dp"
-        android:layout_toEndOf="@+id/imageView4"
-        app:srcCompat="@drawable/arrow2"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-8dp"
+        app:srcCompat="@drawable/arrow"
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="127dp" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="46dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_marginStart="19dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/imageView2"
         android:layout_toEndOf="@+id/imageView"
         app:srcCompat="@drawable/arrow2"
         tools:layout_editor_absoluteX="172dp"
@@ -72,25 +72,26 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="49dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_toStartOf="@+id/imageView6"
+        android:layout_height="76dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="103dp"
         app:srcCompat="@drawable/arrow2"
         tools:layout_editor_absoluteX="250dp"
         tools:layout_editor_absoluteY="127dp" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="63dp"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/imageView"
+        android:layout_alignTop="@+id/imageView3"
         android:layout_marginEnd="18dp"
         app:srcCompat="@drawable/ququ"
         tools:layout_editor_absoluteX="323dp"
         tools:layout_editor_absoluteY="129dp" />
 
-    <ListView
+    <TextView
         android:id="@+id/textView"
         android:layout_width="209dp"
         android:layout_height="83dp"
@@ -117,13 +118,5 @@
         android:text="test"
         android:layout_marginRight="0dp"
         android:layout_alignParentRight="true" />
-
-    <Button
-        android:id="@+id/mission1_clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
-        android:layout_toEndOf="@+id/textView"
-        android:text="Clear" />
 
 </RelativeLayout>
