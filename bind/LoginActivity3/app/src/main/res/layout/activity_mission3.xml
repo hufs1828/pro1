@@ -32,7 +32,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp"
-        app:srcCompat="@drawable/run"
+        app:srcCompat="@drawable/running"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="54dp" />
 

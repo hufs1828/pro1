@@ -33,7 +33,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="49dp"
         android:layout_marginTop="61dp"
-        app:srcCompat="@drawable/run"
+        app:srcCompat="@drawable/running"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="54dp" />
 
