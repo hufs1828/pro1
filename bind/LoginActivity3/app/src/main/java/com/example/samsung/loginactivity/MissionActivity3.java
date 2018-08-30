@@ -2,10 +2,14 @@ package com.example.samsung.loginactivity;
 
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,19 +21,47 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class MissionActivity3 extends AppCompatActivity {
 
     String url ="http://14.63.171.18/android.php?ID=1";
 
     TextView tv;
-
+    DB_OPEN db_open;
+    SQLiteDatabase db;
+    Integer cid;
     public GettingPHP gPHP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mission3);
+
+        Intent intent=getIntent();
+        Integer strPramIntent = intent.getIntExtra("courseID",-1);
+
+        cid=strPramIntent;
+        //toast data that in the previous intent
+        Toast.makeText(this, Integer.toString(strPramIntent), Toast.LENGTH_LONG).show();
+        ArrayList<String> arr = new ArrayList<>();
+
+        db_open = new DB_OPEN(this);
+        db= db_open.getWritableDatabase();
+
+        //Cursor c = db.rawQuery("SELECT contents from step",null);
+        //Cursor c= db.rawQuery("Select step1 from course where id="+strPramIntent,null);
+        Cursor c=db.rawQuery("Select s.contents from step s, course c where c.id="+strPramIntent+" and c.id = s.cid and s.step_id=1",null);
+
+        c.moveToFirst();
+        c.getCount();
+
+        arr.add(c.getString(0));
+
+        ListView list = findViewById(R.id.textView);
+        final ArrayAdapter<String> aaa = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,arr);
+        list.setAdapter(aaa);
+
     }
 
     class GettingPHP extends AsyncTask<String, Integer, String> {

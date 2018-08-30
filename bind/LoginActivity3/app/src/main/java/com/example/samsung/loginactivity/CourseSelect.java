@@ -19,10 +19,14 @@ public class CourseSelect extends AppCompatActivity {
         CustomAdapter adapter= new CustomAdapter(getLayoutInflater());
         //ViewPager에 Adapter 설정
         pager.setAdapter(adapter);
+        Intent intent=getIntent();
+        Integer courseID = intent.getIntExtra("courseID",-1);
+
     }
 
-    private void showMission(){
+    private void showMission(Integer value){
         Intent intent = new Intent(CourseSelect.this,MissionActivity.class);
+        intent.putExtra("courseID",value);
         startActivityForResult(intent,MISSION_SELECT);
     }
     //onClick속성이 지정된 View를 클릭했을때 자동으로 호출되는 메소드
@@ -41,12 +45,12 @@ public class CourseSelect extends AppCompatActivity {
     }
 
     public void courseSelect(View v) {
-        int position;
+        Integer position;
         switch (v.getId()) {
             case R.id.btn_select:
                 position = pager.getCurrentItem();
                 Toast.makeText(this, "select" + position + "course!!", Toast.LENGTH_LONG).show();
-                showMission();
+                showMission(position+1);
         }
         return;
     }

@@ -14,29 +14,31 @@ public class DB_OPEN extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         //TODO Auto-gernerated method stub
-        db.execSQL("create table user" + "(id integer primary key autoincrement,name varchar(50)," +
+        db.execSQL(" create table user" + "(id integer primary key autoincrement,name varchar(50)," +
                 "current_gps text, current_course_id integer default 0, current_step_id integer default 0);");
 
-        db.execSQL("create table step(" +
+        db.execSQL(" create table step(" +
                 "id integer primary key autoincrement," +
                 "name varchar(50)," +
                 "contents varchar(1024)," +
                 "gps text," +
-                "site_id integer);");
+                "site_id integer,"+
+                "cid integer,"+
+                "step_id integer);");
 
-        db.execSQL("insert into step(name, contents, gps, site_id) values('세종대왕동상','조선의 제 4 대 왕을 찾아가세요.', '37.572806&126.976861',1);");
-        db.execSQL("insert into step(name, contents,gps,site_id) values('광화문','조선시대의 정궁(正宮)의 정문(正門)을 찾아가세요.','37.575996&126.976882',1);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('경회루','임금과 신하가 덕으로서 만나는 곳을 찾아가세요.','37.579778&126.976000',1);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values( '쌈지길','1층부터 4층까지 길로 연결된 곳을 찾아가세요.','37.574335&126.984866',4);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('홍대 엘큐브','브라운&초코 남매를 찾아가세요.','37.554694&126.922250',2);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values( '조각공원','거리 속 도미노를 찾아가세요.','37.555761&126.924021',2);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('경의선 숲길','기찻길의 아이들을 찾아가세요.','37.558500&126.925583',5); ");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('전쟁기념관','대외항쟁사와 국난극복사를 기획, 전시, 교육하고 있는 곳을  찾아가세요.','37.536583&126.977139',6);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values( '서울중앙성원','서울에 있는 모스크를 찾아가세요.','37.533361&126.997611',7);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('N서울타워','우리나라 최초의 종합전파탑을 찾아가세요.','37.551250&126.988222',8);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('바이닐앤 플라스틱','현대카드 뮤직스토어를 찾아가세요.','37.536778&127.000889',9);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('코엑스','삼성동 코엑스로 가세요','37.512250&127.058889',10);");
-        db.execSQL("insert into step(name, contents, gps, site_id) values('코엑스 지하','전시회 관람 후 다양한 놀거리가 있는 코엑스 지하로 가세요.','37.512250&127.058889',10);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('세종대왕동상','조선의 제 4 대 왕을 찾아가세요.', '37.572806&126.976861',1,1,1);");
+        db.execSQL("insert into step(name, contents,gps,site_id,cid,step_id) values('광화문','조선시대의 정궁(正宮)의 정문(正門)을 찾아가세요.','37.575996&126.976882',1,1,2);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('경회루','임금과 신하가 덕으로서 만나는 곳을 찾아가세요.','37.579778&126.976000',1,1,3);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values( '쌈지길','1층부터 4층까지 길로 연결된 곳을 찾아가세요.','37.574335&126.984866',3,1,4);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('홍대 엘큐브','브라운&초코 남매를 찾아가세요.','37.554694&126.922250',2,4,1);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values( '조각공원','거리 속 도미노를 찾아가세요.','37.555761&126.924021',2,4,2);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('경의선 숲길','기찻길의 아이들을 찾아가세요.','37.558500&126.925583',4,4,3); ");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('전쟁기념관','대외항쟁사와 국난극복사를 기획, 전시, 교육하고 있는 곳을  찾아가세요.','37.536583&126.977139',5,2,1);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values( '서울중앙성원','서울에 있는 모스크를 찾아가세요.','37.533361&126.997611',6,2,2);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('N서울타워','우리나라 최초의 종합전파탑을 찾아가세요.','37.551250&126.988222',7,2,3);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('바이닐앤 플라스틱','현대카드 뮤직스토어를 찾아가세요.','37.536778&127.000889',8,2,4);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('코엑스','삼성동 코엑스로 가세요','37.512250&127.058889',9,3,1);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('코엑스 지하','전시회 관람 후 다양한 놀거리가 있는 코엑스 지하로 가세요.','37.512250&127.058889',9,3,2);");
 
         db.execSQL("create table quiz(" +
                 " id integer primary key autoincrement," +
@@ -69,7 +71,7 @@ public class DB_OPEN extends SQLiteOpenHelper {
         db.execSQL("insert into site(name,site_gps) values('코엑스','37.512250&127.058889');");
 
 
-        db.execSQL("create table course(" +
+        db.execSQL(" create table course(" +
                 " id integer primary key autoincrement," +
                 " course_name varchar(50)," +
                 " cost integer default 0," +

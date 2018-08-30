@@ -27,6 +27,7 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
     }
     private void selectCourse(){
         Intent intent = new Intent(SampleIntent.this,CourseSelect.class);
+        intent.putExtra("courseID",0);
         startActivityForResult(intent,COURSE_SELECT);
     }
     private void selectMission(){
