@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -22,12 +23,15 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import static java.sql.DriverManager.println;
+
 public class MissionActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int MISSION2_MOVE = 9005;
     DB_OPEN db_open;
     SQLiteDatabase db;
     String url = "http://14.63.171.18/android.php?ID=1";
     TextView tv;
+    Integer cid;
 
     public GettingPHP gPHP;
     @Override
@@ -35,21 +39,24 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mission);
         findViewById(R.id.mission1_clear).setOnClickListener(this);
+        Intent intent=getIntent();
+        Integer strPramIntent = intent.getIntExtra("courseID",-1);
 
+        cid=strPramIntent;
+        //toast data that in the previous intent
+        Toast.makeText(this, Integer.toString(strPramIntent), Toast.LENGTH_LONG).show();
         ArrayList<String> arr = new ArrayList<>();
 
         db_open = new DB_OPEN(this);
         db= db_open.getWritableDatabase();
 
-        Cursor c = db.rawQuery("SELECT contents from step",null);
+        //Cursor c = db.rawQuery("SELECT contents from step",null);
+        //Cursor c= db.rawQuery("Select step1 from course where id="+strPramIntent,null);
+        Cursor c=db.rawQuery("Select s.contents from step s, course c where c.id="+strPramIntent+" and c.id = s.cid and s.step_id=1",null);
+
         c.moveToFirst();
         c.getCount();
 
-        //row수만큼 반복.
-       /* for(int i=0; i< c.getCount(); i++){
-            arr.add(c.getString(0));
-            c.moveToNext();
-        }*/
         arr.add(c.getString(0));
 
         ListView list = findViewById(R.id.textView);
@@ -65,11 +72,14 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
             StringBuilder jsonHtml = new StringBuilder();
             try {
                 System.out.println("HELLO");
+                Log.d("php", "HELLO");
                 URL phpUrl = new URL(params[0]);
                 HttpURLConnection conn = (HttpURLConnection) phpUrl.openConnection();
 
                 if (conn != null) {
                     System.out.println("HELLO2");
+                    Log.d("php", "HELLO2");
+
                     conn.setConnectTimeout(10000);
                     conn.setUseCaches(false);
 
@@ -121,16 +131,11 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-    public void testButtonClicked(View v) {
-        String msg = "미션완료!";
-        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
-        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
-        startActivity(my_intent);
-    }
-
     private void clearMission(){
         Intent intent = new Intent(MissionActivity.this,MissionActivity2.class);
+        intent.putExtra("courseID",cid);
         startActivityForResult(intent,MISSION2_MOVE);
+        finish();
     }
 
     @Override
@@ -141,5 +146,11 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
                 clearMission();
                 break;
         }
+    }
+    public void testButtonClicked(View v) {
+        String msg = "미션완료!";
+        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
+        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
+        startActivity(my_intent);
     }
 }

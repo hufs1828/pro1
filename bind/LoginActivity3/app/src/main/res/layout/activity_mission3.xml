@@ -91,7 +91,7 @@
         tools:layout_editor_absoluteX="323dp"
         tools:layout_editor_absoluteY="129dp" />
 
-    <TextView
+    <ListView
         android:id="@+id/textView"
         android:layout_width="209dp"
         android:layout_height="83dp"
@@ -119,4 +119,11 @@
         android:layout_marginRight="0dp"
         android:layout_alignParentRight="true" />
 
+    <Button
+        android:id="@+id/mission3_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:text="Clear" />
 </RelativeLayout>

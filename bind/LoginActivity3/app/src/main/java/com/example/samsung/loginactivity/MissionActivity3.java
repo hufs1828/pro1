@@ -2,10 +2,14 @@ package com.example.samsung.loginactivity;
 
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,19 +21,45 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
-public class MissionActivity3 extends AppCompatActivity {
+public class MissionActivity3 extends AppCompatActivity implements View.OnClickListener{
 
     String url ="http://14.63.171.18/android.php?ID=1";
 
     TextView tv;
-
+    DB_OPEN db_open;
+    SQLiteDatabase db;
+    Integer cid;
     public GettingPHP gPHP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mission3);
+
+        Intent intent=getIntent();
+        Integer strPramIntent = intent.getIntExtra("courseID",-1);
+
+        cid=strPramIntent;
+        //toast data that in the previous intent
+        Toast.makeText(this, Integer.toString(strPramIntent), Toast.LENGTH_LONG).show();
+        ArrayList<String> arr = new ArrayList<>();
+
+        db_open = new DB_OPEN(this);
+        db= db_open.getWritableDatabase();
+
+        Cursor c=db.rawQuery("Select s.contents from step s, course c where c.id="+strPramIntent+" and c.id = s.cid and s.step_id=3",null);
+
+        c.moveToFirst();
+        c.getCount();
+
+        arr.add(c.getString(0));
+
+        ListView list = findViewById(R.id.textView);
+        final ArrayAdapter<String> aaa = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,arr);
+        list.setAdapter(aaa);
+
     }
 
     class GettingPHP extends AsyncTask<String, Integer, String> {
@@ -92,6 +122,22 @@ public class MissionActivity3 extends AppCompatActivity {
         }
     }
 
+    private void clearMission3(){
+ //       Intent intent = new Intent(MissionActivity3.this,MissionActivity3.class);
+   //     intent.putExtra("courseID",cid);
+     //   startActivityForResult(intent,MISSION3_MOVE);
+        finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.mission3_clear:
+                Toast.makeText(getApplicationContext(),"미션3 클리어!",Toast.LENGTH_LONG).show();
+                clearMission3();
+                break;
+        }
+    }
 
     public void testButtonClicked(View v) {
         String msg = "미션완료!";
