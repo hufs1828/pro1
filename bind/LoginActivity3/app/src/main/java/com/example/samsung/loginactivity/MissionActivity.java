@@ -72,13 +72,13 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
             StringBuilder jsonHtml = new StringBuilder();
             try {
                 System.out.println("HELLO");
-                Log.d("php","HELLO");
+                Log.d("php", "HELLO");
                 URL phpUrl = new URL(params[0]);
                 HttpURLConnection conn = (HttpURLConnection) phpUrl.openConnection();
 
                 if (conn != null) {
                     System.out.println("HELLO2");
-                    Log.d("php","HELLO2");
+                    Log.d("php", "HELLO2");
 
                     conn.setConnectTimeout(10000);
                     conn.setUseCaches(false);
@@ -131,18 +131,11 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-    public void testButtonClicked(View v) {
-        String msg = "미션완료!";
-        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
-        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
-        startActivity(my_intent);
-    }
-
     private void clearMission(){
         Intent intent = new Intent(MissionActivity.this,MissionActivity2.class);
         intent.putExtra("courseID",cid);
-
         startActivityForResult(intent,MISSION2_MOVE);
+        finish();
     }
 
     @Override
@@ -153,5 +146,11 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
                 clearMission();
                 break;
         }
+    }
+    public void testButtonClicked(View v) {
+        String msg = "미션완료!";
+        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
+        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
+        startActivity(my_intent);
     }
 }
