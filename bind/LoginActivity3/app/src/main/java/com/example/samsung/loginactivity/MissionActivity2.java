@@ -125,6 +125,7 @@ public class MissionActivity2 extends AppCompatActivity implements View.OnClickL
 
     private void clearMission2(){
         Intent intent = new Intent(MissionActivity2.this,MissionActivity3.class);
+        intent.putExtra("courseID",cid);
         startActivityForResult(intent,MISSION3_MOVE);
     }
 

@@ -23,7 +23,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class MissionActivity3 extends AppCompatActivity {
+public class MissionActivity3 extends AppCompatActivity implements View.OnClickListener {
+    private static final int CLEAR_PAGE = 9007;
 
     String url ="http://14.63.171.18/android.php?ID=1";
 
@@ -124,10 +125,24 @@ public class MissionActivity3 extends AppCompatActivity {
         }
     }
 
+    private void clearMission3(){
+       // Intent intent = new Intent(MissionActivity2.this,MissionActivity3.class);
+       // startActivityForResult(intent,MISSION3_MOVE);
+    }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.mission3_clear:
+                Toast.makeText(getApplicationContext(),"미션3 클리어!",Toast.LENGTH_LONG).show();
+                clearMission3();
+                break;
+        }
+    }
     public void testButtonClicked(View v) {
         String msg = "미션완료!";
         Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
+        my_intent.getIntExtra("courseID",cid);
         Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
         startActivity(my_intent);
     }
