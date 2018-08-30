@@ -50,9 +50,7 @@ public class MissionActivity3 extends AppCompatActivity implements View.OnClickL
         db_open = new DB_OPEN(this);
         db= db_open.getWritableDatabase();
 
-        //Cursor c = db.rawQuery("SELECT contents from step",null);
-        //Cursor c= db.rawQuery("Select step1 from course where id="+strPramIntent,null);
-        Cursor c=db.rawQuery("Select s.contents from step s, course c where c.id="+strPramIntent+" and c.id = s.cid and s.step_id=1",null);
+        Cursor c=db.rawQuery("Select s.contents from step s, course c where c.id="+strPramIntent+" and c.id = s.cid and s.step_id=3",null);
 
         c.moveToFirst();
         c.getCount();
