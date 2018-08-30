@@ -32,7 +32,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="31dp"
         android:layout_toEndOf="@+id/imageView2"
-        app:srcCompat="@drawable/running"
+        app:srcCompat="@drawable/run"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="54dp" />
 
@@ -92,7 +92,7 @@
         tools:layout_editor_absoluteX="323dp"
         tools:layout_editor_absoluteY="129dp" />
 
-    <TextView
+    <ListView
         android:id="@+id/textView"
         android:layout_width="209dp"
         android:layout_height="83dp"
