@@ -3,6 +3,7 @@ package com.example.samsung.loginactivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -10,6 +11,9 @@ import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 
 public class SampleIntent extends AppCompatActivity implements View.OnClickListener {
+
+    private String LOG_TAG = SampleIntent.class.getSimpleName();
+
     private static final int COURSE_SELECT = 9003;
     private static final int MISSION_SELECT = 9004;
     @Override
