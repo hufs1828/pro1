@@ -30,10 +30,7 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("courseID",0);
         startActivityForResult(intent,COURSE_SELECT);
     }
-    private void selectMission(){
-        Intent intent = new Intent(SampleIntent.this,MissionActivity.class);
-        startActivityForResult(intent,MISSION_SELECT);
-    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -46,7 +43,6 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
                 selectCourse();
                 break;
             case R.id.button_rank:
-                selectMission();
                 Toast.makeText(getApplicationContext(),"RANK 준비중입니다.",Toast.LENGTH_LONG).show();
                 break;
             case R.id.button_store:

@@ -126,7 +126,6 @@ public class MissionActivity3 extends AppCompatActivity implements View.OnClickL
  //       Intent intent = new Intent(MissionActivity3.this,MissionActivity3.class);
    //     intent.putExtra("courseID",cid);
      //   startActivityForResult(intent,MISSION3_MOVE);
-        finish();
     }
 
     @Override
@@ -134,6 +133,7 @@ public class MissionActivity3 extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.mission3_clear:
                 Toast.makeText(getApplicationContext(),"미션3 클리어!",Toast.LENGTH_LONG).show();
+                finish();
                 clearMission3();
                 break;
         }

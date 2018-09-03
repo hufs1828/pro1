@@ -51,6 +51,7 @@ public class CourseSelect extends AppCompatActivity {
                 position = pager.getCurrentItem();
                 Toast.makeText(this, "select" + position + "course!!", Toast.LENGTH_LONG).show();
                 showMission(position+1);
+                finish();
         }
         return;
     }
