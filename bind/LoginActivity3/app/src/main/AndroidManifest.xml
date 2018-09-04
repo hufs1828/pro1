@@ -41,7 +41,19 @@
             android:label="우리 어디가?"
             android:theme="@style/AppTheme"></activity>
         <activity
-            android:name=".Hint_Activity"
+            android:name=".HintActivity"
+            android:label="우리 어디가?"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".HintActivity2"
+            android:label="우리 어디가?"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".HintActivity3"
+            android:label="우리 어디가?"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".RankActivity"
             android:label="우리 어디가?"
             android:theme="@style/AppTheme"></activity>
         <activity

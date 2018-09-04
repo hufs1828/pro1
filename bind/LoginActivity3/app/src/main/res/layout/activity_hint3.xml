@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MissionActivity2"
+    tools:context=".MissionActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D0E4F5"
@@ -13,9 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_below="@+id/imageView2"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="MISSION2"
+        android:layout_marginTop="205dp"
+        android:text="HINT!"
         android:textColor="#FF0000"
         android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,88 +28,116 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="101dp"
-        android:layout_height="124dp"
+        android:layout_width="66dp"
+        android:layout_height="69dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="31dp"
-        android:layout_toEndOf="@+id/imageView2"
-        app:srcCompat="@drawable/run"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/running"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="54dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="44dp"
-        android:layout_height="59dp"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="114dp"
-        app:srcCompat="@drawable/arrow2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="98dp"
+        app:srcCompat="@drawable/next_arrow"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="123dp" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="46dp"
-        android:layout_height="67dp"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
         android:layout_alignTop="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/arrow2"
+        android:layout_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/current_arrow"
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="127dp" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="46dp"
+        android:layout_width="71dp"
         android:layout_height="64dp"
-        android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/imageView2"
-        android:layout_marginStart="100dp"
-        app:srcCompat="@drawable/arrow"
+        android:layout_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/next_arrow"
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="127dp" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="49dp"
-        android:layout_height="81dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="99dp"
-        android:layout_marginTop="106dp"
-        app:srcCompat="@drawable/arrow2"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/next_arrow"
         tools:layout_editor_absoluteX="250dp"
         tools:layout_editor_absoluteY="127dp" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="71dp"
-        android:layout_height="64dp"
+        android:layout_width="58dp"
+        android:layout_height="62dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageView3"
-        android:layout_marginEnd="18dp"
-        app:srcCompat="@drawable/ququ"
+        android:layout_alignTop="@+id/imageView2"
+        app:srcCompat="@drawable/qm"
         tools:layout_editor_absoluteX="323dp"
         tools:layout_editor_absoluteY="129dp" />
 
-    <ListView
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="79dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toStartOf="@+id/imageView6"
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="79dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="79dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp"
+        android:layout_marginStart="58dp"
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="209dp"
         android:layout_height="83dp"
-        android:textSize="30dp"
-        android:textAlignment="center"
-
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="143dp"
+
+        android:layout_marginBottom="145dp"
         android:background="@drawable/shape"
-        android:text="미션내용"
+        android:text="서울의 야경을 한 눈에 구경할 수 있는 곳으로 가세요"
+        android:textAlignment="center"
+        android:textSize="22dp"
         tools:layout_editor_absoluteX="88dp"
         tools:layout_editor_absoluteY="301dp" />
 
     <Button
-        android:id="@+id/btn_hint2"
+        android:id="@+id/tmp_complete3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -116,16 +145,8 @@
         android:layout_marginBottom="0dp"
         android:layout_marginEnd="0dp"
         android:onClick="testButtonClicked"
-        android:text="test"
+        android:text="tmp_complete"
         android:layout_marginRight="0dp"
         android:layout_alignParentRight="true" />
-
-    <Button
-        android:id="@+id/mission2_clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_hint3"
-        android:layout_alignParentEnd="true"
-        android:text="Clear" />
 
 </RelativeLayout>

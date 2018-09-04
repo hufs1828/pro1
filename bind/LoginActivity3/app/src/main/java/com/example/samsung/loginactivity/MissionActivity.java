@@ -23,8 +23,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import static java.sql.DriverManager.println;
-
 public class MissionActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int MISSION2_MOVE = 9005;
     DB_OPEN db_open;
@@ -148,8 +146,8 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
     public void testButtonClicked(View v) {
-        String msg = "미션완료!";
-        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
+        String msg = "힌트!";
+        Intent my_intent = new Intent(getApplicationContext(),HintActivity.class);
         Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
         startActivity(my_intent);
     }

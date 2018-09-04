@@ -106,7 +106,7 @@
         tools:layout_editor_absoluteY="301dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_hint1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -122,7 +122,7 @@
         android:id="@+id/mission1_clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/btn_hint1"
         android:layout_toEndOf="@+id/textView"
         android:text="Clear" />
 

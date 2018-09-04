@@ -140,8 +140,8 @@ public class MissionActivity3 extends AppCompatActivity implements View.OnClickL
     }
 
     public void testButtonClicked(View v) {
-        String msg = "미션완료!";
-        Intent my_intent = new Intent(getApplicationContext(),Hint_Activity.class);
+        String msg = "힌트버튼";
+        Intent my_intent = new Intent(getApplicationContext(),HintActivity3.class);
         Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
         startActivity(my_intent);
     }

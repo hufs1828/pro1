@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         if(requestCode == REQUEST_CODE_MENU) {
-            Toast.makeText(getApplicationContext(), "로그인 되었습니다."+requestCode+ resultCode, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_LONG).show();
 
             if (requestCode == RESULT_OK) {
                 String name = data.getExtras().getString("name");
