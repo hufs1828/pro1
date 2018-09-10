@@ -15,7 +15,13 @@ public class DB_OPEN extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //TODO Auto-gernerated method stub
         db.execSQL(" create table user" + "(id integer primary key autoincrement,name varchar(50)," +
-                "current_gps text, current_course_id integer default 0, current_step_id integer default 0);");
+                "current_gps text, current_course_id integer default 0, current_step_id integer default 0,points integer default 0);");
+
+        db.execSQL("insert into user(name,current_gps,points) values('김하영','000',300)");
+        db.execSQL("insert into user(name,current_gps,points) values('김문업','000',340)");
+        db.execSQL("insert into user(name,current_gps,points) values('오주훈','000',500)");
+        db.execSQL("insert into user(name,current_gps,points) values('이형준','000',1000)");
+
 
         db.execSQL(" create table step(" +
                 "id integer primary key autoincrement," +
