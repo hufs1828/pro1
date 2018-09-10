@@ -2,11 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/textview_myrank"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="내 랭크"
+            android:textSize="24sp"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:id="@+id/textview_myname"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="내 이름"
+            android:textSize="24sp"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:id="@+id/textview_mypts"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="내 포인트"
+            android:textSize="24sp"
+            android:background="@drawable/border" />
+    </LinearLayout>
 
     <ListView
-        android:id="@+id/List_name"
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="450dp"></ListView>
+        android:layout_height="475dp" />
 
 </LinearLayout>

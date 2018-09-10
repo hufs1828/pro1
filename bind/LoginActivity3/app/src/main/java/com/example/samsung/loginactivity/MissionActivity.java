@@ -56,7 +56,7 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
         c.getCount();
 
         arr.add(c.getString(0));
-
+        Log.e("stage",c.getString(0));
         ListView list = findViewById(R.id.textView);
         final ArrayAdapter<String> aaa = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,arr);
         list.setAdapter(aaa);
@@ -69,14 +69,10 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
         protected String doInBackground(String... params) {
             StringBuilder jsonHtml = new StringBuilder();
             try {
-                System.out.println("HELLO");
-                Log.d("php", "HELLO");
                 URL phpUrl = new URL(params[0]);
                 HttpURLConnection conn = (HttpURLConnection) phpUrl.openConnection();
 
                 if (conn != null) {
-                    System.out.println("HELLO2");
-                    Log.d("php", "HELLO2");
 
                     conn.setConnectTimeout(10000);
                     conn.setUseCaches(false);
@@ -101,7 +97,6 @@ public class MissionActivity extends AppCompatActivity implements View.OnClickLi
 
         protected void onPostExecute(String str) {
             try {
-                System.out.println("HELLO#");
                 // PHP에서 받아온 JSON 데이터를 JSON오브젝트로 변환
                 JSONObject jObject = new JSONObject(str);
                 // results라는 key는 JSON배열로 되어있다.
