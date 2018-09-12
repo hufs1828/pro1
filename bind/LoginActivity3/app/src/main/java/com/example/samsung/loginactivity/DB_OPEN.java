@@ -21,6 +21,19 @@ public class DB_OPEN extends SQLiteOpenHelper {
         db.execSQL("insert into user(name,current_gps,points) values('김문업','000',340)");
         db.execSQL("insert into user(name,current_gps,points) values('오주훈','000',500)");
         db.execSQL("insert into user(name,current_gps,points) values('이형준','000',1000)");
+        db.execSQL("insert into user(name,current_gps,points) values('김민영','000',100)");
+        db.execSQL("insert into user(name,current_gps,points) values('김주연','000',220)");
+        db.execSQL("insert into user(name,current_gps,points) values('김하은','000',50)");
+        db.execSQL("insert into user(name,current_gps,points) values('임현아','000',0)");
+        db.execSQL("insert into user(name,current_gps,points) values('조성권','000',30)");
+        db.execSQL("insert into user(name,current_gps,points) values('강신혁','000',3400)");
+        db.execSQL("insert into user(name,current_gps,points) values('임지혜','000',500)");
+        db.execSQL("insert into user(name,current_gps,points) values('이경은','000',120)");
+        db.execSQL("insert into user(name,current_gps,points) values('배유진','000',420)");
+        db.execSQL("insert into user(name,current_gps,points) values('박유진','000',340)");
+        db.execSQL("insert into user(name,current_gps,points) values('전지훈','000',640)");
+        db.execSQL("insert into user(name,current_gps,points) values('이재혁','000',1000)");
+
 
 
         db.execSQL(" create table step(" +
