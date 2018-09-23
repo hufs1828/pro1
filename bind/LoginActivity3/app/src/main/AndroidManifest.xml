@@ -68,6 +68,11 @@
                 category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StoreActivity"
+            android:label="포인트 상점"
+            android:theme="@style/AppTheme"></activity>
+
     </application>
 
 </manifest>
