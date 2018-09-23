@@ -3,6 +3,7 @@ package com.example.samsung.loginactivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -39,6 +40,15 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("Format",18);
         startActivity(intent);
     }
+
+    private void showStore(){
+        Log.e("enter","enter to the store");
+        Intent intent = new Intent(SampleIntent.this, StoreActivity.class);
+        intent.putExtra("ID",ID);
+        startActivity(intent);
+    }
+
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -55,7 +65,8 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
                 showRank();
                 break;
             case R.id.button_store:
-                Toast.makeText(getApplicationContext(),"STORE 준비중입니다.",Toast.LENGTH_LONG).show();
+                showStore();
+                Toast.makeText(getApplicationContext(),"STORE로 이동합니다.",Toast.LENGTH_LONG).show();
                 break;
         }
     }
