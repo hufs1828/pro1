@@ -15,24 +15,24 @@ public class DB_OPEN extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //TODO Auto-gernerated method stub
         db.execSQL(" create table user" + "(id integer primary key autoincrement,name varchar(50)," +
-                "current_gps text, current_course_id integer default 0, current_step_id integer default 0,points integer default 0,id varchar(50));");
+                "current_gps text, current_course_id integer default 0, current_step_id integer default 0,points integer default 0,user_id varchar(255));");
 
-        db.execSQL("insert into user(name,current_gps,points,id) values('김하영','000',300,'khay0311@gmail.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('김문업','000',340,'kmup@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('오주훈','000',500,'ojh031@gmail.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('이형준','000',1000,'lyj@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('김민영','000',100,'kmy@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('김주연','000',220,'kjy@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('김하은','000',50,'khe@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('임현아','000',0,'lha@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('조성권','000',30,'csk@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('강신혁','000',3400,'ksh@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('임지혜','000',500,'ljy@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('이경은','000',120,'lke@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('배유진','000',420,'byj@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('박유진','000',340,'pyj@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,id) values('전지훈','000',640,'jh@test.com')");
-        db.execSQL("insert into user(name,current_gps,points,ids) values('이재혁','000',1000,'ljh@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('김하영','000',300,'khay0311@gmail.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('김문업','000',340,'kmup@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('오주훈','000',500,'ojh031@gmail.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('이형준','000',1000,'lyj@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('김민영','000',100,'kmy@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('김주연','000',220,'kjy@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('김하은','000',50,'khe@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('임현아','000',0,'lha@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('조성권','000',30,'csk@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('강신혁','000',3400,'ksh@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('임지혜','000',500,'ljy@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('이경은','000',120,'lke@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('배유진','000',420,'byj@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('박유진','000',340,'pyj@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('전지훈','000',640,'jh@test.com');");
+        db.execSQL("insert into user(name,current_gps,points,user_id) values('이재혁','000',1000,'ljh@test.com');");
 
 
 
@@ -49,15 +49,20 @@ public class DB_OPEN extends SQLiteOpenHelper {
         db.execSQL("insert into step(name, contents,gps,site_id,cid,step_id) values('광화문','조선시대의 정궁(正宮)의 정문(正門)을 찾아가세요.','37.575996&126.976882',1,1,2);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('경회루','임금과 신하가 덕으로서 만나는 곳을 찾아가세요.','37.579778&126.976000',1,1,3);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values( '쌈지길','1층부터 4층까지 길로 연결된 곳을 찾아가세요.','37.574335&126.984866',3,1,4);");
-        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('홍대 엘큐브','브라운&초코 남매를 찾아가세요.','37.554694&126.922250',2,4,1);");
+       /* db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('홍대 엘큐브','브라운&초코 남매를 찾아가세요.','37.554694&126.922250',2,4,1);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values( '조각공원','거리 속 도미노를 찾아가세요.','37.555761&126.924021',2,4,2);");
-        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('경의선 숲길','기찻길의 아이들을 찾아가세요.','37.558500&126.925583',4,4,3); ");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('경의선 숲길','기찻길의 아이들을 찾아가세요.','37.558500&126.925583',4,4,3); ");*/
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('전쟁기념관','대외항쟁사와 국난극복사를 기획, 전시, 교육하고 있는 곳을  찾아가세요.','37.536583&126.977139',5,2,1);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values( '서울중앙성원','서울에 있는 모스크를 찾아가세요.','37.533361&126.997611',6,2,2);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('N서울타워','우리나라 최초의 종합전파탑을 찾아가세요.','37.551250&126.988222',7,2,3);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('바이닐앤 플라스틱','현대카드 뮤직스토어를 찾아가세요.','37.536778&127.000889',8,2,4);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('코엑스','삼성동 코엑스로 가세요','37.512250&127.058889',9,3,1);");
         db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('코엑스 지하','전시회 관람 후 다양한 놀거리가 있는 코엑스 지하로 가세요.','37.512250&127.058889',9,3,2);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('외대 정문','경비아저씨에게 인사해 주세요','37.335318&127.260067',10,4,1);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('외대 공대','네모안의 네모 건물을 찾아가세요','37.337498&127.267749',11,4,2);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('외대 망각의 숲','모든 걸 잊게된다는 그 숲을 찾아가세요','37.339400&127.270249',12,4,3);");
+        db.execSQL("insert into step(name, contents, gps, site_id,cid,step_id) values('외대 인경관','계단 지옥! 정문에서 가장 먼 건물을 찾아가세요','37.339656&127.274712',13,4,4);");
+
 
         db.execSQL("create table quiz(" +
                 " id integer primary key autoincrement," +
@@ -76,9 +81,14 @@ public class DB_OPEN extends SQLiteOpenHelper {
         db.execSQL("insert into quiz(contents,answer,step_id) values('이곳 전망대에 있는 화장실의 개수는?','10개',10);");
         db.execSQL("insert into quiz(contents,answer,step_id) values('악마의 집으로 찾아가서 상호명을 정확히 적으세요.' ,'DEVILs DOOR BREWERY',12);");
         db.execSQL("insert into quiz(contents,answer,step_id) values('한국의 돈키호테라 불리는 곳의 이름을 적으세요.','삐에로 쇼핑',13);");
+        db.execSQL("insert into quiz(contents, answer, step_id) values('정문에서 가장 가까운 버스정류장의 이름은?','모현지석묘',14)");
+        db.execSQL("insert into quiz(contents, answer, step_id) values('이 건물의 4층에는 총 몇개의 연구실이 있나요?', '12', 15)");
+        db.execSQL("insert into quiz(contents, answer, step_id) values('이 곳 앞에 있는 연못의 이름은?','명수당',16)");
+        db.execSQL("insert into quiz(contents, answer, step_id) values('교수 연구실은 몇 층에 있나?','2층',17)");
 
 
         db.execSQL("create table site( id integer primary key autoincrement, name varchar(50), site_gps text);");
+
         db.execSQL("insert into site(name,site_gps) values('광화문','37.575996&126.976882');");
         db.execSQL("insert into site(name,site_gps) values('홍대입구역','37.557561&126.924515');");
         db.execSQL("insert into site(name,site_gps) values('인사동쌈지길','37.574299&126.984878');");
@@ -88,6 +98,10 @@ public class DB_OPEN extends SQLiteOpenHelper {
         db.execSQL("insert into site(name,site_gps) values('N서울타워','37.551250&126.988222');");
         db.execSQL("insert into site(name,site_gps) values('한남동','37.537346&126.986997');");
         db.execSQL("insert into site(name,site_gps) values('코엑스','37.512250&127.058889');");
+        db.execSQL("insert into site(name,site_gps) values('외대정문','37.335318&127.260067')");
+        db.execSQL("insert into site(name, site_gps) values('공대','37.337498&127.267749')");
+        db.execSQL("insert into site(name, site_gps) values('망각의 숲','37.339400&127.270249')");
+        db.execSQL("insert into site(name, site_gps) values('인경관','37.339656&127.274712')");
 
 
         db.execSQL(" create table course(" +
@@ -106,6 +120,7 @@ public class DB_OPEN extends SQLiteOpenHelper {
         db.execSQL("insert into course(course_name,step1,step2,step3,step4) values(\"광화문\",1,2,3,4);");
         db.execSQL("insert into course(course_name,step1,step2,step3,step4) values(\"이태원\",8,11,9,10);");
         db.execSQL("insert into course(course_name,step1,step2) values(\"코엑스\",12,13);\n");
+        db.execSQL("insert into course(course_name,step1,step2, step3, step4) values(\"한국외국어대학교\",14,15,16,17);");
 
 
     }
