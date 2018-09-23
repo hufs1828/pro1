@@ -24,7 +24,7 @@ public class UserAdapter  extends ArrayAdapter<User> {
 
     class UserViewHolder{
         public TextView rank_tv;
-        public TextView name_tv;
+        public TextView id_tv;
         public TextView pts_tv;
     }
     public UserAdapter(Context context, List<User> list, ListView listview){
@@ -45,7 +45,7 @@ public class UserAdapter  extends ArrayAdapter<User> {
 
             viewHolder = new UserViewHolder();
             viewHolder.rank_tv = (TextView) rowView.findViewById(R.id.textview_rank);
-            viewHolder.name_tv = (TextView) rowView.findViewById(R.id.textview_name);
+            viewHolder.id_tv = (TextView) rowView.findViewById(R.id.textview_id);
             viewHolder.pts_tv = (TextView) rowView.findViewById(R.id.textview_pts);
         }
         else{
@@ -53,7 +53,7 @@ public class UserAdapter  extends ArrayAdapter<User> {
         }
         User user = (User) mList.get(position);
         viewHolder.rank_tv.setText(user.getRank());
-        viewHolder.name_tv.setText(user.getName());
+        viewHolder.id_tv.setText(user.getID());
         viewHolder.pts_tv.setText(user.getPts());
 
         return rowView;

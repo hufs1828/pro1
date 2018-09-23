@@ -12,8 +12,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 public class SampleIntent extends AppCompatActivity implements View.OnClickListener {
     private static final int COURSE_SELECT = 9003;
     private static final int MISSION_SELECT = 9004;
+    String ID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent intent = getIntent();
+        ID=intent.getStringExtra("ID");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample_intent);
 
@@ -32,6 +35,8 @@ public class SampleIntent extends AppCompatActivity implements View.OnClickListe
     }
     private void showRank(){
         Intent intent = new Intent(SampleIntent.this,RankActivity.class);
+        intent.putExtra("ID",ID);
+        intent.putExtra("Format",18);
         startActivity(intent);
     }
     @Override

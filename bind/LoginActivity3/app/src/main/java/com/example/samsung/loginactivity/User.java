@@ -6,9 +6,14 @@ package com.example.samsung.loginactivity;
 
 public class User {
     private String rank;
-    private String name;
     private String pts;
-
+    private String id;
+    public String getID(){
+        return id;
+    }
+    public void setID(String id){
+        this.id= id;
+    }
     public String getRank() {
         return rank;
     }
@@ -17,13 +22,7 @@ public class User {
         this.rank = rank;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getPts() {
         return pts;
@@ -32,10 +31,11 @@ public class User {
     public void setPts(String pts) {
         this.pts = pts;
     }
-
-    public User(String rank, String name, String pts) {
+    public User() {
+    }
+    public User(String rank, String id, String pts) {
         this.rank = rank;
-        this.name = name;
+        this.id=id;
         this.pts = pts;
     }
 }

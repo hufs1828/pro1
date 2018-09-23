@@ -21,12 +21,12 @@
             android:background="@drawable/border" />
 
         <TextView
-            android:id="@+id/textview_myname"
+            android:id="@+id/textview_myid"
             android:layout_width="153dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="left"
-            android:text="내 이름"
+            android:text="내 아이디"
             android:textSize="24sp"
             android:background="@drawable/border" />
 

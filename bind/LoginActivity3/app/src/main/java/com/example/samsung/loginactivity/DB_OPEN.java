@@ -15,24 +15,24 @@ public class DB_OPEN extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //TODO Auto-gernerated method stub
         db.execSQL(" create table user" + "(id integer primary key autoincrement,name varchar(50)," +
-                "current_gps text, current_course_id integer default 0, current_step_id integer default 0,points integer default 0,email varchar(50));");
+                "current_gps text, current_course_id integer default 0, current_step_id integer default 0,points integer default 0,id varchar(50));");
 
-        db.execSQL("insert into user(name,current_gps,points) values('김하영','000',300,'khay0311@daum.net')");
-        db.execSQL("insert into user(name,current_gps,points) values('김문업','000',340,'kmup@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('오주훈','000',500,'ojh@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('이형준','000',1000,'lyj@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('김민영','000',100,'kmy@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('김주연','000',220,'kjy@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('김하은','000',50,'khe@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('임현아','000',0,'lha@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('조성권','000',30,'csk@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('강신혁','000',3400,'ksh@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('임지혜','000',500,'ljy@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('이경은','000',120,'lke@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('배유진','000',420,'byj@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('박유진','000',340,'pyj@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('전지훈','000',640,'jh@test.com')");
-        db.execSQL("insert into user(name,current_gps,points) values('이재혁','000',1000,'ljh@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('김하영','000',300,'khay0311@gmail.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('김문업','000',340,'kmup@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('오주훈','000',500,'ojh031@gmail.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('이형준','000',1000,'lyj@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('김민영','000',100,'kmy@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('김주연','000',220,'kjy@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('김하은','000',50,'khe@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('임현아','000',0,'lha@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('조성권','000',30,'csk@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('강신혁','000',3400,'ksh@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('임지혜','000',500,'ljy@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('이경은','000',120,'lke@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('배유진','000',420,'byj@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('박유진','000',340,'pyj@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,id) values('전지훈','000',640,'jh@test.com')");
+        db.execSQL("insert into user(name,current_gps,points,ids) values('이재혁','000',1000,'ljh@test.com')");
 
 
 
